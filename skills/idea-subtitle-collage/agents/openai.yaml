@@ -1,0 +1,6 @@
+interface:
+  display_name: "想法转字幕拼图"
+  short_description: "把个人想法与人物照片或生图转换为连续字幕拼图，并导出抖音图文素材"
+  default_prompt: "使用 $idea-subtitle-collage 将我的想法改成短句，配人物图片，制作原生字幕拼图和抖音素材包。"
+policy:
+  allow_implicit_invocation: true

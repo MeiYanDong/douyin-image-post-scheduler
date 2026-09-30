@@ -14,6 +14,8 @@ description: Batch prepare, upload, schedule, and verify Douyin image posts from
 3. 需要实际控制 Chrome 时，读取 [references/browser-workflow.md](references/browser-workflow.md)。
 4. 发布属于对外代表性操作。若用户尚未明确确认整批发布，先完成预检和首条草稿，在第一次点击“发布”前请求确认；整批确认后无需逐条重复询问。
 
+输入仍是一段想法或人物图片时，先用 `$idea-subtitle-collage` 制作字幕拼图和素材包，再读取本 Skill 生成发布队列。
+
 ## 素材约定
 
 每条内容通常放在一个以三位编号开头的目录中：
@@ -32,6 +34,8 @@ description: Batch prepare, upload, schedule, and verify Douyin image posts from
 - 音乐选择“收藏”中的第一首。
 - 公开、允许保存、不同时发布到其他平台。
 - 每天 3 条，北京时间 09:00—22:00 随机分散；使用用户指定的起始日期。
+
+静态字幕拼图可以每条只有 1 张图片，预检时传入 `--image-count 1`。图片数以该批素材的实际约定为准；一张图里的字幕条数不计作发布图片数，也不重复图片凑数。
 
 ## 生成队列
 
